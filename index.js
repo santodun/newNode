@@ -5,6 +5,7 @@ var path = require('path');
 
 exports.get = function(event, context, callback) {
   var contents = fs.readFileSync(`public${path.sep}index.html`);
+  alert(1);
   var result = {
     statusCode: 200,
     body: contents.toString(),
